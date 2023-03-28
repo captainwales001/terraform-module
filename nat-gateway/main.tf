@@ -72,7 +72,7 @@ resource "aws_route_table_association" "private_data_subnet_az1_rt_az1_associati
 
 # create private route table az2 and add route through nat gateway az2
 resource "aws_route_table" "private_route_table_az2" {
-  vpc_id = var.vpc_id 
+  vpc_id = var.vpc_id
 
   route {
     cidr_block     = "0.0.0.0/0"
